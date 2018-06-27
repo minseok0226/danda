@@ -17,7 +17,7 @@ class MyWindow(QMainWindow, form_class):
 
         accouns_num = int(self.kiwoom.get_login_info("ACCOUNT_CNT"))
         accounts = self.kiwoom.get_login_info("ACCNO")
-aa
+
         accounts_list = accounts.split(';')[0:accouns_num]
         self.comboBox_account.addItems(accounts_list)
 
